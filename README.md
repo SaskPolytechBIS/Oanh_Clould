@@ -325,7 +325,6 @@ https://te3tjmyua1.execute-api.ca-central-1.amazonaws.com/prod/resize
 | :--- | :--- |
 | `resize_function/image_resizer.py` | Python code for the Lambda function. |
 | `state_machine.json` | Definition of the Step Functions workflow using Amazon States Language (ASL). |
-| `.gitattributes` | Git attributes configuration (e.g., normalize line endings). |
 | `.gitignore` | Standard file to exclude temporary/build files from version control. |
 | `LICENSE` | Licensing information for the project code. |
 | `README.md` | Project documentation and run instructions. |
