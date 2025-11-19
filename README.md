@@ -79,7 +79,7 @@ This repository only contains the pieces you need to deploy the Lambda, the Pill
 ```text
 .
 ├── resize_function/
-│   └── app.py                # Lambda handler using Pillow to resize images
+│   └── app.py                # Python code for Lamda function
 ├── state_machine.json        # ASL (Amazon States Language) definition for ImageResizeWorkflow
 ├── pillow311-x86_64.zip      # Pre-built Pillow Lambda Layer package
 └── README.md                 # This documentation file
