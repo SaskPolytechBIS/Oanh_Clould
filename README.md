@@ -325,8 +325,11 @@ https://te3tjmyua1.execute-api.ca-central-1.amazonaws.com/prod/resize
 | :--- | :--- |
 | `resize_function/image_resizer.py` | Python code for the Lambda function. |
 | `state_machine.json` | Definition of the Step Functions workflow using Amazon States Language (ASL). |
-| `.gitignore` | Standard file to exclude temporary directories and files. |
+| `.gitattributes` | Git attributes configuration (e.g., normalize line endings). |
+| `.gitignore` | Standard file to exclude temporary/build files from version control. |
 | `LICENSE` | Licensing information for the project code. |
+| `README.md` | Project documentation and run instructions. |
+| `pillow311-x86_64.zip` | Pre-built Pillow Lambda Layer package used by the Lambda function. |
 
 ---
 
