@@ -85,9 +85,9 @@ This repository only contains the pieces you need to deploy the Lambda, the Pill
 └── README.md                 # This documentation file
 ```
 
-### Lambda handler (`resize_function/app.py`)
+### Lambda function code (`resize_function/app.py`)
 
-The handler expects an event shaped like:
+It expects an event shaped like:
 
 ```json
 {
@@ -174,7 +174,7 @@ In my project, this layer is provided as `pillow311-x86_64.zip`.
    - Has basic Lambda execution permissions (CloudWatch Logs).
    - Has S3 read/write access to both the source and destination buckets.
 4. On the function page:
-   - Use the code from the file `image_resizer.py` of `resize_function/` folder for Lambda's function code
+   - Use the code from the file `app.py` in the `resize_function/` folder for the Lambda function code.
 
 5. Under **Layers**:
    - Click **Add a layer**.
@@ -323,7 +323,7 @@ https://te3tjmyua1.execute-api.ca-central-1.amazonaws.com/prod/resize
 
 | File Name | Description |
 | :--- | :--- |
-| `resize_function/image_resizer.py` | Python code for the Lambda function. |
+| `resize_function/app.py` | Python code for the Lambda function. |
 | `state_machine.json` | Definition of the Step Functions workflow using Amazon States Language (ASL). |
 | `.gitignore` | Standard file to exclude temporary/build files from version control. |
 | `LICENSE` | Licensing information for the project code. |
